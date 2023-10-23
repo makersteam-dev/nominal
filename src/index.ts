@@ -59,7 +59,7 @@ window.Webflow.push(() => {
     const { scrollY } = window;
 
     if (navbar && navMenuButton) {
-      if (scrollY > 80) {
+      if (scrollY > 200) {
         // Add your mobile-specific actions here when scrolling
         navbar.style.backgroundColor = '#FAFBFD';
         if (nominalLogo) {
