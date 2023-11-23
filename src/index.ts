@@ -2,7 +2,7 @@ window.Webflow ||= [];
 window.Webflow.push(() => {
   // Get references to the elements you want to style
   const navbar = document.querySelector<HTMLElement>('.navbar');
-  const navLinks = document.querySelectorAll<HTMLElement>('.nav-link');
+  const navLinks = document.querySelectorAll<HTMLElement>('.nav-link, .nav--link-arrow');
   const nominalLogo = document.querySelector<HTMLElement>('.nominal-logo');
   const navDemoButton = document.querySelector<HTMLElement>('.nav-demo-button-text'); // Updated class name
   const navMenuButton = document.querySelector<HTMLElement>('.menu-button');
@@ -15,7 +15,7 @@ window.Webflow.push(() => {
     if (navbar && navDemoButton) {
       if (scrollY <= 300) {
         navbar.style.backgroundColor = 'transparent';
-        navbar.style.height = '9.6rem';
+        // navbar.style.height = '9.6rem';
 
         navLinks.forEach((link) => {
           link.style.color = '#F9FAFC';
@@ -31,7 +31,7 @@ window.Webflow.push(() => {
         navDemoButton.style.color = '#27274E';
       } else {
         navbar.style.backgroundColor = '#FAFBFD';
-        navbar.style.height = '7.2rem';
+        // navbar.style.height = '7.2rem';
 
         navLinkLine.forEach((navLinkLine) => {
           navLinkLine.style.backgroundColor = '#27274E';
